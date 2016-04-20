@@ -1,0 +1,134 @@
+.deep-purple.darken-2 {
+  background-color: #512da8 !important; }
+
+
+.mdi-navigation-arrow-drop-down:before {
+  content: "\e8a3"; 
+}
+
+.collapsible {
+  border-top: 1px solid #ddd !important;
+  border-right: 1px solid #ddd !important;
+  border-left: 1px solid #ddd !important;
+  margin: 0.5rem 0 1rem 0 !important; 
+}
+
+.collapsible-header {
+  display: block !important;
+  cursor: pointer !important;
+  min-height: 3rem !important;
+  line-height: 3rem !important;
+  padding: 0 1rem !important;
+  background-color: #fff !important;
+  border-bottom: 1px solid #ddd !important; 
+}
+
+.collapsible-header i {
+    width: 2rem !important; 
+    font-size: 1.6rem !important;
+    line-height: 3rem !important;
+    display: block !important;
+    float: left !important;
+    text-align: center !important;
+    margin-right: 1rem !important; }
+
+/*.collapsible-body {
+  border-bottom: 1px solid #ddd !important;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important; }*/
+/*  .collapsible-body p {
+    margin: 0 !important;
+    padding: 2rem !important; }*/
+
+.side-nav .collapsible {
+  border: none !important;
+  box-shadow: none !important; }
+  .side-nav .collapsible li {
+    padding: 0 !important; }
+
+.side-nav .collapsible-header {
+  background-color: transparent !important;
+  border: none !important;
+  line-height: inherit !important;
+  height: inherit !important;
+  margin: 0 1rem !important; }
+  .side-nav .collapsible-header i {
+    line-height: inherit !important; }
+
+.side-nav .collapsible-body {
+  border: 0 !important;
+  background-color: #fff !important; }
+  .side-nav .collapsible-body li a {
+    margin: 0 1rem 0 2rem !important; }
+
+
+/*  SIDE-NAV CSS */
+
+.side-nav {
+	position: fixed !important;
+	width: 240px !important;
+	left: -105% !important;
+	top: 0 !important;
+	margin: 0 !important;
+	height: 100% !important;
+	height: calc(100% + 60px) !important;
+	height: -moz-calc(100%) !important;
+	padding-bottom: 60px !important; 
+	background-color: #fff !important;
+	z-index: 999 !important;
+	will-change: left !important; 
+}
+
+.side-nav .collapsible {
+	margin: 0 !important; 
+}
+
+.side-nav li {
+float: none !important;
+padding: 0 15px !important; }
+.side-nav li:hover, .side-nav li.active {
+background-color: #ddd !important; }
+.side-nav a {
+color: #444 !important;
+display: block !important;
+font-size: 2rem !important;
+height: 64px !important;
+line-height: 64px !important;
+padding: 0 15px !important; }
+
+.side-nav.fixed a {
+display: block !important;
+padding: 0 15px !important;
+color: #444 !important; }
+
+.side-nav.fixed {
+left: 0 !important;
+position: fixed !important; }
+
+.side-nav .collapsible-body li.active,
+.side-nav.fixed .collapsible-body li.active {
+background-color: #ee6e73 !important; }
+.side-nav .collapsible-body li.active a,
+.side-nav.fixed .collapsible-body li.active a {
+color: #fff !important; }
+
+
+.no-padding {
+padding: 0 !important; 
+}
+
+.subGroup  {
+ 	
+}
+
+
+/*[type="radio"].with-gap:checked + label:before {
+    border-radius: 50%;
+    border: 2px solid #512da8;
+}
+
+[type="radio"].with-gap:checked + label:after {
+    border: 2px solid #512da8;
+    background-color: #512da8;
+}*/
