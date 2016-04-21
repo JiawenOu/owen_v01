@@ -11,6 +11,7 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script type="text/javascript" language="javascript" src="auto_dropdown_item.js"></script>
 	<script type="text/javascript" language="javascript" src="myJS.js"></script>
+	<link href="icon" rel="stylesheet">
 </head>
 <body>
 
@@ -22,58 +23,57 @@
 	  <div class="panel panel-default collapsible">
 	    <div class="panel-heading panel-title collapsible-header">
 	        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-	        	<span class="glyphicon glyphicon-collapse-down"></span>
+	        	<span class="glyphicon glyphicon-collapse-down icon-success"></span>
 	        	Building{{my.building}}
 	        </a>
 	    </div>
 	    <div id="collapse1" class="panel-collapse collapse">
-	      <ul class="list-group">
-			<li ng-repeat="b in buildings">
+	      <div class="panel-body">
+			<li ng-repeat="b in buildings" class="subGroup">
                 <input class="with-gap" name="building" type="radio" ng-model="my.building" ng-value="b.Id" id="b{{b.Id}}">
-                <label for="b{{b.Id}}">{{b.Name}}</label>
+                <label for="b{{b.Id}}">&nbsp&nbsp{{b.Name}}</label>
 			</li>
-	      </ul>
+	      </div>
 	    </div>
 	  </div>
 
-	  <div class="panel panel-default">
-	    <div class="panel-heading">
-	      <h4 class="panel-title">
+	  <div class="panel panel-default collapsible">
+	    <div class="panel-heading panel-title collapsible-header">
 	        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-	        	<span class="glyphicon glyphicon-collapse-down"></span>
+	        	<span class="glyphicon glyphicon-collapse-down icon-success"></span>
 				Room{{my.room}}
 			</a>
-	      </h4>
 	    </div>
 	    <div id="collapse2" class="panel-collapse collapse">
-	      <ul class="list-group">
-			<li ng-repeat="r in rooms" class="list-group-item">
+	      <div class="panel-body">
+			<li ng-repeat="r in rooms" class="subGroup">
                 <input class="with-gap" name="room" type="radio" ng-model="my.room" ng-value="r.Id" id="r{{r.Id}}">
-                <label for="r{{r.Id}}">{{r.Name}}</label>
+                <label for="r{{r.Id}}">&nbsp&nbsp{{r.Name}}</label>
 			</li>
-	      </ul>
+	      </div>
 	    </div>
 	  </div>
 
-	  <div class="panel panel-default">
-	    <div class="panel-heading">
-	      <h4 class="panel-title">
+	  <div class="panel panel-default collapsible">
+	    <div class="panel-heading panel-title collapsible-header">
 	        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-	        	<span class="glyphicon glyphicon-collapse-down"></span>
+	        	<span class="glyphicon glyphicon-collapse-down icon-success"></span>
 				Kinect{{my.kinect}}
 			</a>
-	      </h4>
 	    </div>
 	    <div id="collapse3" class="panel-collapse collapse">
-	      <ul class="list-group">
-			<li ng-repeat="k in kinects" class="list-group-item">
+	      <div class="panel-body">
+			<li ng-repeat="k in kinects" class="subGroup">
                 <input class="with-gap" name="kinect" type="radio" ng-model="my.kinect" ng-value="k.Id" id="k{{k.Id}}">
-                <label for="k{{k.Id}}">{{k.Name}}</label>
+                <label for="k{{k.Id}}">&nbsp&nbsp{{k.Name}}</label>
 			</li>
-	      </ul>
+	      </div>
 	    </div>
 	  </div>
 	</div>
+	<button class="btn" type="submit" name="mySubmit" id="search">Search
+		<i class="material-icons right">send</i>
+    </button>
 </ul>
 </div>
 
