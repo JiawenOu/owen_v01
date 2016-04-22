@@ -16,9 +16,9 @@ test.controller('MyController', function($scope) {
 			},  {
 				Id: ': #3',
 				Name: 'Three',
-			}, 	{
-				Id: ': #4',
-				Name: 'Four',
+			// }, 	{
+			// 	Id: ': #4',
+			// 	Name: 'Four',
 			}];
 	$scope.rooms = [{
 				Id: ': #1',
